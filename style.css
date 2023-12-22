@@ -124,7 +124,7 @@ ul {
 
 .btn:hover {
   color: #fff;
-  mix-blend-mode: unset;
+  mix-blend-mode: initial;
 }
 
 .en {
