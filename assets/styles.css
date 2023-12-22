@@ -1,0 +1,261 @@
+/* --------------- Variables --------------- */
+/* --------------- General Styles --------------- */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+body {
+  overflow-x: hidden;
+  background-image: url("./assets/background-comprimiert.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Inter", sans-serif;
+}
+
+body.stopScrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* --------------- Reusable CSS Code --------------- */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* max-width: 75rem; */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  position: relative;
+  padding: 7rem 0;
+  width: 100%;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.logo {
+  width: 300px;
+  margin-right: 1.5rem;
+  font-size: 2.5rem;
+  color: black;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.sub-heading {
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding: 0.13rem 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.heading {
+  color: black;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.text {
+  color: black;
+  font-size: 1rem;
+  margin-bottom: 2rem 0;
+  line-height: 2.3;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.75rem;
+  background-color: black;
+  color: #fff;
+  font-size: 0.85rem;
+  letter-spacing: 0.4px;
+  min-width: 125px;
+  text-align: center;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.3s;
+  /* background-clip: text;
+    -webkit-background-clip: text; */
+  /* mix-blend-mode: screen; */
+  mix-blend-mode: multiply;
+}
+.btn:hover {
+  color: #fff;
+  mix-blend-mode: unset;
+}
+
+.en {
+  display: none;
+}
+
+/* --------------- Navbar Styling --------------- */
+header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border-top: 2px solid black;
+  transition: 0.3s;
+  mix-blend-mode: multiply;
+}
+header .logo {
+  height: 220px;
+  line-height: 220px;
+}
+
+nav.container {
+  padding: 0 110px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+.links .logo {
+  height: 220px;
+  line-height: 220px;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 600;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: calc(-0.5rem + 2.5px);
+  right: -1rem;
+  width: 0;
+  height: 2rem;
+  background-color: black;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s;
+}
+.nav-link:hover, .nav-link.active {
+  color: black;
+}
+.nav-link:hover::after, .nav-link.active::after {
+  width: calc(100% + 2rem); /* 100% plus link margin * 2 for both sides*/
+  opacity: 0.2;
+}
+
+/* --------------- Hamburger --------------- */
+.hamburger {
+  display: none;
+  padding: 1rem 0;
+  height: 12px;
+  width: 25px;
+  box-sizing: content-box;
+  cursor: pointer;
+  position: relative;
+}
+.hamburger .bar {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border-radius: 3px;
+  position: absolute;
+}
+.hamburger .bar:first-child {
+  top: 1rem;
+  transition: top 0.2s 0.15s, transform 0.3s;
+}
+.hamburger .bar:last-child {
+  bottom: 1rem;
+  transition: bottom 0.2s 0.15s, transform 0.3s;
+}
+
+body.open .hamburger .bar:first-child {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  transition: top 0.2s, transform 0.3s 0.1s;
+}
+
+body.open .hamburger .bar:last-child {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  transition: bottom 0.2s, transform 0.3s 0.1s;
+}
+
+/* --------------- Courses / Locations--------------- */
+.location,
+.course {
+  display: flex;
+  align-items: center;
+  /* width: calc(100% - 20rem); */
+  margin: 0 10rem 5rem 10rem;
+}
+.location:nth-of-type(even),
+.course:nth-of-type(even) {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.location {
+  margin: 0 10rem 7.5rem 10rem;
+}
+
+.btn.location, .btn.course {
+  margin: 0 10rem;
+}
+
+.info {
+  max-width: 750px;
+}
+.info:nth-of-type(even) {
+  margin: 0 0 5rem 10rem;
+}
+
+#ww img {
+  margin-left: auto;
+  width: 300px;
+}
+
+#kib img {
+  margin-right: auto;
+  width: 300px;
+}
+
+/* --------------- --------------- *//*# sourceMappingURL=styles.css.map */

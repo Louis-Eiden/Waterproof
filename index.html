@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- --------- JQuery --------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- --------- Scroll Reveal --------- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- --------- Fontawesome Icons --------- -->
+    <script
+      src="https://kit.fontawesome.com/9292224885.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- --------- CSS Files --------- -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- --------- Navbar --------- -->
+      <nav class="container">
+        <a href="#" class="logo">waterproof</a>
+        <a href="#" class="btn">book now</a>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#home" class="nav-link">start</a>
+            </li>
+            <li>
+              <a href="#courses" class="nav-link">kurse</a>
+            </li>
+            <li>
+              <a href="#locations" class="nav-link">standorte</a>
+            </li>
+          </ul>
+          <!-- language toggle buttons ? -->
+        </div>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Home Section -->
+      <section class="home section" id="home">
+        <div class="container"></div>
+      </section>
+
+      <!-- Courses Section -->
+      <section class="courses section" id="courses">
+        <div class="container">
+          <!-- Children -->
+          <div class="course" id="children">
+            <div class="info">
+              <!-- German -->
+              <p class="heading de">Unsere Kinder-Schwimmkurse</p>
+              <p class="sub-heading de">Spaß, Sicherheit, Selbstvertrauen</p>
+              <p class="text de">
+                Unsere speziell konzipierten Kinder-Schwimmkurse bieten nicht
+                nur eine sichere Lernumgebung, sondern auch jede Menge Spaß für
+                die kleinen Wasserratten. Mit einem erfahrenen Team von
+                qualifizierten Schwimmlehrern sorgen wir dafür, dass Ihre Kinder
+                nicht nur schwimmen lernen, sondern auch Vertrauen im Wasser
+                aufbauen.
+              </p>
+              <!-- English -->
+              <p class="heading en">Children's Swimming Courses</p>
+              <p class="sub-heading en">
+                Where Every Child Dives into a World of Confidence and Fun!
+              </p>
+              <p class="text en">
+                At Waterproof, we believe that swimming is not just a skill;
+                it's a lifelong adventure filled with joy and
+                confidence-building moments. Our children's swimming courses are
+                designed to create a safe and exciting environment where kids
+                can embrace the water, develop essential swimming skills, and
+                build a foundation for a lifetime of aquatic enjoyment.
+              </p>
+            </div>
+            <a href="#" class="btn">kinder kursplan</a>
+          </div>
+
+          <!-- Adults -->
+          <div class="course" id="adult">
+            <a href="#" class="btn">erwachsenen kursplan</a>
+            <div class="info">
+              <!-- German -->
+              <p class="heading de">Unsere Erwachsenen-Schwimmkurse</p>
+              <p class="sub-heading de">
+                Ein Weg zu mehr Fitness, Spaß und Entspannung
+              </p>
+              <p class="text de">
+                Bei Waterproof verstehen wir, dass es nie zu spät ist, das
+                Schwimmen zu erlernen oder die eigenen Schwimmfertigkeiten zu
+                verbessern. Unsere Erwachsenen-Schwimmkurse bieten die perfekte
+                Umgebung, um in Ihrem eigenen Tempo zu lernen und sich im Wasser
+                wohl zu fühlen..
+              </p>
+              <!-- English -->
+              <p class="heading en">Our Adult Swimming Courses</p>
+              <p class="sub-heading en">
+                A Path to Increased Fitness, Fun, and Relaxation
+              </p>
+              <p class="text en">
+                Welcome to [Your Swimming School Name], where we believe that
+                it's never too late to dive into the world of swimming! Our
+                adult swimming courses are designed to cater to individuals of
+                all skill levels, whether you're a beginner looking to conquer
+                your fear of water or an experienced swimmer aiming to refine
+                your technique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Locations Section -->
+      <section class="locations section" id="locations">
+        <div class="container">
+          <!-- Winnweiler -->
+          <div class="location" id="ww">
+            <div class="info">
+              <!-- German -->
+              <p class="heading de">Freibad Winnweiler</p>
+              <p class="sub-heading de">Spaß, Sicherheit, Selbstvertrauen</p>
+              <p class="text de">
+                Unsere speziell konzipierten Kinder-Schwimmkurse bieten nicht
+                nur eine sichere Lernumgebung, sondern auch jede Menge Spaß für
+                die kleinen Wasserratten. Mit einem erfahrenen Team von
+                qualifizierten Schwimmlehrern sorgen wir dafür, dass Ihre Kinder
+                nicht nur schwimmen lernen, sondern auch Vertrauen im Wasser
+                aufbauen.
+              </p>
+              <!-- English -->
+              <p class="heading en">Children's Swimming Courses</p>
+              <p class="sub-heading en">
+                Where Every Child Dives into a World of Confidence and Fun!
+              </p>
+              <p class="text en">
+                At Waterproof, we believe that swimming is not just a skill;
+                it's a lifelong adventure filled with joy and
+                confidence-building moments. Our children's swimming courses are
+                designed to create a safe and exciting environment where kids
+                can embrace the water, develop essential swimming skills, and
+                build a foundation for a lifetime of aquatic enjoyment.
+              </p>
+            </div>
+            <!-- Picture -->
+            <img src="./assets/winnweiler.jpg" alt="" />
+          </div>
+
+          <!-- Kircheimbolanden -->
+          <div class="location" id="kib">
+            <!-- Picture -->
+            <img src="./assets/kircheimbolanden.jpg" alt="" />
+            <!-- German -->
+            <div class="info">
+              <p class="heading de">Hallenbad Kircheimbolanden</p>
+              <p class="sub-heading de">
+                Ein Weg zu mehr Fitness, Spaß und Entspannung
+              </p>
+              <p class="text de">
+                Bei Waterproof verstehen wir, dass es nie zu spät ist, das
+                Schwimmen zu erlernen oder die eigenen Schwimmfertigkeiten zu
+                verbessern. Unsere Erwachsenen-Schwimmkurse bieten die perfekte
+                Umgebung, um in Ihrem eigenen Tempo zu lernen und sich im Wasser
+                wohl zu fühlen..
+              </p>
+              <!-- English -->
+              <p class="heading en">Our Adult Swimming Courses</p>
+              <p class="sub-heading en">
+                A Path to Increased Fitness, Fun, and Relaxation
+              </p>
+              <p class="text en">
+                Welcome to [Your Swimming School Name], where we believe that
+                it's never too late to dive into the world of swimming! Our
+                adult swimming courses are designed to cater to individuals of
+                all skill levels, whether you're a beginner looking to conquer
+                your fear of water or an experienced swimmer aiming to refine
+                your technique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <a href="#" class="logo">waterproof</a>
+
+          <ul class="social-media">
+            <li>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="copy">&copy; 2023. All rights reserved</p>
+
+          <!-- <div class="contact-info"></div>
+          <div class="opening-hours"></div> -->
+        </div>
+      </footer>
+    </main>
+    <!-- Bubble-Group-1 -->
+    <img
+      src="./assets/Bubble-1-opacity50.png"
+      style="top: 190%; left: 20%; width: 40px; height: 40px"
+      class="bubble"
+      id="bubble-1"
+    />
+    <img
+      src="./assets/Bubble-2-opacity50.png"
+      style="top: 160%; left: 30%; width: 150px; height: 150px"
+      class="bubble"
+      id="bubble-2"
+    />
+    <img
+      src="./assets/Bubble-3-opacity50.png"
+      style="top: 180%; left: 60%; width: 80px; height: 80px"
+      class="bubble"
+      id="bubble-3"
+    />
+    <img
+      src="./assets/Bubble-4-opacity50.png"
+      style="top: 200%; left: 90%; width: 200px; height: 200px"
+      class="bubble"
+      id="bubble-4"
+    />
+    <img
+      src="./assets/Bubble-1-opacity50.png"
+      style="top: 190%; left: 80%; width: 100px; height: 100px"
+      class="bubble"
+      id="bubble-5"
+    />
+    <img
+      src="./assets/Bubble-2-opacity50.png"
+      style="top: 160%; left: 40%; width: 60px; height: 60px"
+      class="bubble"
+      id="bubble-6"
+    />
+    <img
+      src="./assets/Bubble-3-opacity50.png"
+      style="top: 190%; left: 12%; width: 120px; height: 120px"
+      class="bubble"
+      id="bubble-7"
+    />
+    <img
+      src="./assets/Bubble-4-opacity50.png"
+      style="top: 200%; left: 10%; width: 50px; height: 50px"
+      class="bubble"
+      id="bubble-8"
+    />
+    <!-- Bubble-Group-2 -->
+    <img
+      src="./assets/Bubble-1-opacity50.png"
+      style="top: 250%; left: 20%; width: 40px; height: 40px"
+      class="bubble"
+      id="bubble-1"
+    />
+    <img
+      src="./assets/Bubble-2-opacity50.png"
+      style="top: 220%; left: 30%; width: 150px; height: 150px"
+      class="bubble"
+      id="bubble-2"
+    />
+    <img
+      src="./assets/Bubble-3-opacity50.png"
+      style="top: 240%; left: 60%; width: 80px; height: 80px"
+      class="bubble"
+      id="bubble-3"
+    />
+    <img
+      src="./assets/Bubble-4-opacity50.png"
+      style="top: 260%; left: 90%; width: 200px; height: 200px"
+      class="bubble"
+      id="bubble-4"
+    />
+    <img
+      src="./assets/Bubble-1-opacity50.png"
+      style="top: 250%; left: 80%; width: 100px; height: 100px"
+      class="bubble"
+      id="bubble-5"
+    />
+    <img
+      src="./assets/Bubble-2-opacity50.png"
+      style="top: 220%; left: 40%; width: 60px; height: 60px"
+      class="bubble"
+      id="bubble-6"
+    />
+    <img
+      src="./assets/Bubble-3-opacity50.png"
+      style="top: 240%; left: 12%; width: 120px; height: 120px"
+      class="bubble"
+      id="bubble-7"
+    />
+    <img
+      src="./assets/Bubble-4-opacity50.png"
+      style="top: 260%; left: 10%; width: 50px; height: 50px"
+      class="bubble"
+      id="bubble-8"
+    />
+    <!-- JavaScript Files -->
+    <script src="./index.js"></script>
+  </body>
+</html>
