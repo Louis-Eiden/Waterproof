@@ -27,7 +27,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-image: url("./assets/background-comprimiert.jpg");
+  background-image: url("./assets/background.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
