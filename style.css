@@ -34,6 +34,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+body.loading {
+  opacity: 0; /* Initially set the opacity to 0 while the image is loading */
+}
+
 body.stopScrolling {
   height: 100%;
   overflow: hidden;
