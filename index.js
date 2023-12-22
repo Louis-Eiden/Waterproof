@@ -8,7 +8,7 @@ $(document).ready(function () {
     origin: "bottom",
     distance: "120%",
     easing: "ease-in-out",
-    viewFactor: 0.1,
+
     // Additional options...
     afterReveal: function (domEl) {
       // Add your custom animation logic here
