@@ -4,6 +4,6 @@ $(document).ready(function () {
   // Parallax scrolling effect
   $(window).scroll(function () {
     var scrollPosition = $(window).scrollTop();
-    body.css("background-position", "center " + -scrollPosition * 1 + "px"); // Adjust the multiplier for the parallax effect
+    body.css("background-position", "center " + -scrollPosition * 0.2 + "px"); // Adjust the multiplier for the parallax effect
   });
 });

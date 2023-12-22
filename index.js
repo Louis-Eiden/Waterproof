@@ -6,19 +6,22 @@ $(document).ready(function () {
   sr.reveal(".bubble", {
     duration: 500,
     origin: "bottom",
-    distance: "120%",
+    distance: "0%",
     easing: "ease-in-out",
 
     // Additional options...
     afterReveal: function (domEl) {
-      // Add your custom animation logic here
       animateBubbles(domEl);
     },
   });
 
   function animateBubbles(element) {
-    // Your custom animation logic for the bubbles
-    // For example, you can use jQuery to modify the element's properties
+    // Get the width of the bubble
+    var bubbleWidth = $(element).width();
+
+    // Calculate distance based on the width
+    var distance = bubbleWidth * 5;
+    // custom animation logic for the bubbles
     $(element)
       .animate(
         {
@@ -31,7 +34,7 @@ $(document).ready(function () {
       )
       .animate(
         {
-          top: "-50%", // Adjust this value based on how much you want the bubbles to rise
+          top: -distance + "px",
         },
         {
           duration: 5000, // Set the duration for the rise animation
