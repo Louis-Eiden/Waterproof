@@ -1,0 +1,19 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize ScrollReveal with default options
+  ScrollReveal((reset = true)).reveal(".bubble", (index, el) => {
+    // Calculate delay based on image width
+    const width = el.clientWidth;
+    const distance = width * 0.1 + "px"; // Adjust the factor based on your preference
+
+    return {
+      duration: 5500, // Total duration of the animation
+      delay: 500,
+      origin: "bottom",
+      distance: -el.clientWidth * 5 + "px",
+      beforeReveal: (el) => {
+        // Opacity animation
+        el.style.opacity = 1;
+      },
+    };
+  });
+});

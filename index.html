@@ -27,7 +27,7 @@
       <!-- --------- Navbar --------- -->
       <nav class="container">
         <a href="#" class="logo">waterproof</a>
-        <a href="#" class="btn">book now</a>
+        <a href="#" class="nav-btn">book now</a>
         <div class="links">
           <ul>
             <li>
@@ -59,7 +59,7 @@
         <div class="container">
           <!-- Children -->
           <div class="course" id="children">
-            <div class="info">
+            <div class="info left">
               <!-- German -->
               <p class="heading de">Unsere Kinder-Schwimmkurse</p>
               <p class="sub-heading de">Spaß, Sicherheit, Selbstvertrauen</p>
@@ -91,7 +91,7 @@
           <!-- Adults -->
           <div class="course" id="adult">
             <a href="#" class="btn">erwachsenen kursplan</a>
-            <div class="info">
+            <div class="info right">
               <!-- German -->
               <p class="heading de">Unsere Erwachsenen-Schwimmkurse</p>
               <p class="sub-heading de">
@@ -127,7 +127,7 @@
         <div class="container">
           <!-- Winnweiler -->
           <div class="location" id="ww">
-            <div class="info">
+            <div class="info left">
               <!-- German -->
               <p class="heading de">Freibad Winnweiler</p>
               <p class="sub-heading de">Spaß, Sicherheit, Selbstvertrauen</p>
@@ -154,15 +154,23 @@
               </p>
             </div>
             <!-- Picture -->
-            <img src="./assets/winnweiler.jpg" alt="" />
+            <img
+              src="./assets/winnweiler.jpg"
+              alt="Freibad Winnweiler"
+              class="img"
+            />
           </div>
 
           <!-- Kircheimbolanden -->
           <div class="location" id="kib">
             <!-- Picture -->
-            <img src="./assets/kircheimbolanden.jpg" alt="" />
+            <img
+              src="./assets/kircheimbolanden.jpg"
+              alt="Hallenbad Kircheimbolanden"
+              class="img"
+            />
             <!-- German -->
-            <div class="info">
+            <div class="info right">
               <p class="heading de">Hallenbad Kircheimbolanden</p>
               <p class="sub-heading de">
                 Ein Weg zu mehr Fitness, Spaß und Entspannung
@@ -219,107 +227,115 @@
         </div>
       </footer>
     </main>
-    <!-- Bubble-Group-1 -->
-    <img
-      src="./assets/Bubble-1-opacity50.png"
-      style="top: 190%; left: 20%; width: 40px; height: 40px"
-      class="bubble"
-      id="bubble-1"
-    />
-    <img
-      src="./assets/Bubble-2-opacity50.png"
-      style="top: 160%; left: 30%; width: 150px; height: 150px"
-      class="bubble"
-      id="bubble-2"
-    />
-    <img
-      src="./assets/Bubble-3-opacity50.png"
-      style="top: 180%; left: 60%; width: 80px; height: 80px"
-      class="bubble"
-      id="bubble-3"
-    />
-    <img
-      src="./assets/Bubble-4-opacity50.png"
-      style="top: 200%; left: 90%; width: 200px; height: 200px"
-      class="bubble"
-      id="bubble-4"
-    />
-    <img
-      src="./assets/Bubble-1-opacity50.png"
-      style="top: 190%; left: 80%; width: 100px; height: 100px"
-      class="bubble"
-      id="bubble-5"
-    />
-    <img
-      src="./assets/Bubble-2-opacity50.png"
-      style="top: 160%; left: 40%; width: 60px; height: 60px"
-      class="bubble"
-      id="bubble-6"
-    />
-    <img
-      src="./assets/Bubble-3-opacity50.png"
-      style="top: 190%; left: 12%; width: 120px; height: 120px"
-      class="bubble"
-      id="bubble-7"
-    />
-    <img
-      src="./assets/Bubble-4-opacity50.png"
-      style="top: 200%; left: 10%; width: 50px; height: 50px"
-      class="bubble"
-      id="bubble-8"
-    />
-    <!-- Bubble-Group-2 -->
-    <img
-      src="./assets/Bubble-1-opacity50.png"
-      style="top: 290%; left: 20%; width: 40px; height: 40px"
-      class="bubble"
-      id="bubble-1"
-    />
-    <img
-      src="./assets/Bubble-2-opacity50.png"
-      style="top: 260%; left: 30%; width: 150px; height: 150px"
-      class="bubble"
-      id="bubble-2"
-    />
-    <img
-      src="./assets/Bubble-3-opacity50.png"
-      style="top: 280%; left: 60%; width: 80px; height: 80px"
-      class="bubble"
-      id="bubble-3"
-    />
-    <img
-      src="./assets/Bubble-4-opacity50.png"
-      style="top: 300%; left: 90%; width: 200px; height: 200px"
-      class="bubble"
-      id="bubble-4"
-    />
-    <img
-      src="./assets/Bubble-1-opacity50.png"
-      style="top: 290%; left: 80%; width: 100px; height: 100px"
-      class="bubble"
-      id="bubble-5"
-    />
-    <img
-      src="./assets/Bubble-2-opacity50.png"
-      style="top: 260%; left: 40%; width: 60px; height: 60px"
-      class="bubble"
-      id="bubble-6"
-    />
-    <img
-      src="./assets/Bubble-3-opacity50.png"
-      style="top: 280%; left: 12%; width: 120px; height: 120px"
-      class="bubble"
-      id="bubble-7"
-    />
-    <img
-      src="./assets/Bubble-4-opacity50.png"
-      style="top: 300%; left: 10%; width: 50px; height: 50px"
-      class="bubble"
-      id="bubble-8"
-    />
+    <div class="bubbles">
+      <!-- Bubble-Group-1 -->
+      <img
+        src="./assets/Bubble-1-opacity50.png"
+        style="top: 190%; left: 20%; width: 40px; height: 40px"
+        class="bubble"
+        id="bubble-1"
+      />
+      <img
+        src="./assets/Bubble-2-opacity50.png"
+        style="top: 160%; left: 30%; width: 150px; height: 150px"
+        class="bubble"
+        id="bubble-2"
+      />
+      <img
+        src="./assets/Bubble-3-opacity50.png"
+        style="top: 180%; left: 60%; width: 80px; height: 80px"
+        class="bubble"
+        id="bubble-3"
+      />
+      <img
+        src="./assets/Bubble-4-opacity50.png"
+        style="top: 200%; left: 90%; width: 200px; height: 200px"
+        class="bubble"
+        id="bubble-4"
+      />
+      <img
+        src="./assets/Bubble-1-opacity50.png"
+        style="top: 190%; left: 80%; width: 100px; height: 100px"
+        class="bubble"
+        id="bubble-5"
+      />
+      <img
+        src="./assets/Bubble-2-opacity50.png"
+        style="top: 160%; left: 40%; width: 60px; height: 60px"
+        class="bubble"
+        id="bubble-6"
+      />
+      <img
+        src="./assets/Bubble-3-opacity50.png"
+        style="top: 190%; left: 12%; width: 120px; height: 120px"
+        class="bubble"
+        id="bubble-7"
+      />
+      <img
+        src="./assets/Bubble-4-opacity50.png"
+        style="top: 200%; left: 10%; width: 50px; height: 50px"
+        class="bubble"
+        id="bubble-8"
+      />
+      <!-- Bubble-Group-2 -->
+      <img
+        src="./assets/Bubble-1-opacity50.png"
+        style="top: 290%; left: 20%; width: 40px; height: 40px"
+        class="bubble"
+        id="bubble-9"
+      />
+      <img
+        src="./assets/Bubble-2-opacity50.png"
+        style="top: 260%; left: 30%; width: 150px; height: 150px"
+        class="bubble"
+        id="bubble-10"
+      />
+      <img
+        src="./assets/Bubble-3-opacity50.png"
+        style="top: 280%; left: 60%; width: 80px; height: 80px"
+        class="bubble"
+        id="bubble-11"
+      />
+      <img
+        src="./assets/Bubble-4-opacity50.png"
+        style="top: 300%; left: 90%; width: 200px; height: 200px"
+        class="bubble"
+        id="bubble-12"
+      />
+      <img
+        src="./assets/Bubble-1-opacity50.png"
+        style="top: 290%; left: 80%; width: 100px; height: 100px"
+        class="bubble"
+        id="bubble-13"
+      />
+      <img
+        src="./assets/Bubble-2-opacity50.png"
+        style="top: 260%; left: 40%; width: 60px; height: 60px"
+        class="bubble"
+        id="bubble-14"
+      />
+      <img
+        src="./assets/Bubble-3-opacity50.png"
+        style="top: 280%; left: 12%; width: 120px; height: 120px"
+        class="bubble"
+        id="bubble-15"
+      />
+      <img
+        src="./assets/Bubble-4-opacity50.png"
+        style="top: 300%; left: 10%; width: 50px; height: 50px"
+        class="bubble"
+        id="bubble-16"
+      />
+    </div>
     <!-- JavaScript Files -->
-    <script src="./index.js"></script>
-    <script src="./backgroundParallax.js"></script>
-    <script src="./lazyLoading.js"></script>
+    <script src="./JS/lazyLoading.js"></script>
+    <script src="./JS/bgReveal.js"></script>
+    <script src="./JS/backgroundParallax.js"></script>
+
+    <script src="./JS/navReveal.js"></script>
+    <script src="./JS/textReveal.js"></script>
+
+    <script src="./JS/clickBubble.js"></script>
+    <script src="./jQuery/bubbleReveal.js"></script>
   </body>
 </html>

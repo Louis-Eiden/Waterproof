@@ -1,0 +1,27 @@
+$(document).ready(function () {
+  // Initialize ScrollReveal with default options
+  window.sr = ScrollReveal();
+
+  // Specify animation settings for left-aligned divs
+  sr.reveal(".info.left", {
+    duration: 1000,
+    origin: "left",
+    distance: "100px",
+    easing: "ease-in-out",
+  });
+
+  // Specify animation settings for right-aligned divs
+  sr.reveal(".info.right", {
+    duration: 1000,
+    origin: "right",
+    distance: "100px",
+    easing: "ease-in-out",
+  });
+
+  // Specify animation settings for buttons
+  sr.reveal(".btn", {
+    duration: 1000,
+    opacity: 1,
+    easing: "ease-in-out",
+  });
+});
