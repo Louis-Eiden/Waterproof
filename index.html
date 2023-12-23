@@ -5,24 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- --------- JQuery --------- -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- --------- Scroll Reveal --------- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- --------- CSS Files --------- -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- --------- JQuery --------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- --------- Scroll Reveal --------- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- --------- Fontawesome Icons --------- -->
     <script
       src="https://kit.fontawesome.com/9292224885.js"
       crossorigin="anonymous"
     ></script>
-    <!-- --------- CSS Files --------- -->
-    <link rel="stylesheet" href="./style.css" />
+    <!-- ---------  JavaScript Files --------- -->
+    <script src="./JS/bgLazyLoading.js"></script>
+    <script src="./JS/bgReveal.js"></script>
+    <script src="./JS/bgParallax.js"></script>
+
+    <script src="./JS/navReveal.js"></script>
+    <script src="./JS/textReveal.js"></script>
+
+    <script src="./JS/clickBubble.js"></script>
+    <script src="./jQuery/bubbleReveal.js"></script>
   </head>
   <body>
+    <!-- <div class="loader"></div> -->
     <header>
       <!-- --------- Navbar --------- -->
       <nav class="container">
@@ -155,7 +166,7 @@
             </div>
             <!-- Picture -->
             <img
-              src="./assets/winnweiler.jpg"
+              src="./assets/winnweiler.webp"
               alt="Freibad Winnweiler"
               class="img"
             />
@@ -165,7 +176,7 @@
           <div class="location" id="kib">
             <!-- Picture -->
             <img
-              src="./assets/kircheimbolanden.jpg"
+              src="./assets/kircheimbolanden.webp"
               alt="Hallenbad Kircheimbolanden"
               class="img"
             />
@@ -230,112 +241,118 @@
     <div class="bubbles">
       <!-- Bubble-Group-1 -->
       <img
-        src="./assets/Bubble-1-opacity50.png"
+        src="./assets/Bubble-1-opacity50.webp"
         style="top: 190%; left: 20%; width: 40px; height: 40px"
         class="bubble"
         id="bubble-1"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-2-opacity50.png"
+        src="./assets/Bubble-2-opacity50.webp"
         style="top: 160%; left: 30%; width: 150px; height: 150px"
         class="bubble"
         id="bubble-2"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-3-opacity50.png"
+        src="./assets/Bubble-3-opacity50.webp"
         style="top: 180%; left: 60%; width: 80px; height: 80px"
         class="bubble"
         id="bubble-3"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-4-opacity50.png"
+        src="./assets/Bubble-4-opacity50.webp"
         style="top: 200%; left: 90%; width: 200px; height: 200px"
         class="bubble"
         id="bubble-4"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-1-opacity50.png"
+        src="./assets/Bubble-1-opacity50.webp"
         style="top: 190%; left: 80%; width: 100px; height: 100px"
         class="bubble"
         id="bubble-5"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-2-opacity50.png"
+        src="./assets/Bubble-2-opacity50.webp"
         style="top: 160%; left: 40%; width: 60px; height: 60px"
         class="bubble"
         id="bubble-6"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-3-opacity50.png"
+        src="./assets/Bubble-3-opacity50.webp"
         style="top: 190%; left: 12%; width: 120px; height: 120px"
         class="bubble"
         id="bubble-7"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-4-opacity50.png"
+        src="./assets/Bubble-4-opacity50.webp"
         style="top: 200%; left: 10%; width: 50px; height: 50px"
         class="bubble"
         id="bubble-8"
+        loading="lazy"
       />
       <!-- Bubble-Group-2 -->
       <img
-        src="./assets/Bubble-1-opacity50.png"
+        src="./assets/Bubble-1-opacity50.webp"
         style="top: 290%; left: 20%; width: 40px; height: 40px"
         class="bubble"
         id="bubble-9"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-2-opacity50.png"
+        src="./assets/Bubble-2-opacity50.webp"
         style="top: 260%; left: 30%; width: 150px; height: 150px"
         class="bubble"
         id="bubble-10"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-3-opacity50.png"
+        src="./assets/Bubble-3-opacity50.webp"
         style="top: 280%; left: 60%; width: 80px; height: 80px"
         class="bubble"
         id="bubble-11"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-4-opacity50.png"
+        src="./assets/Bubble-4-opacity50.webp"
         style="top: 300%; left: 90%; width: 200px; height: 200px"
         class="bubble"
         id="bubble-12"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-1-opacity50.png"
+        src="./assets/Bubble-1-opacity50.webp"
         style="top: 290%; left: 80%; width: 100px; height: 100px"
         class="bubble"
         id="bubble-13"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-2-opacity50.png"
+        src="./assets/Bubble-2-opacity50.webp"
         style="top: 260%; left: 40%; width: 60px; height: 60px"
         class="bubble"
         id="bubble-14"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-3-opacity50.png"
+        src="./assets/Bubble-3-opacity50.webp"
         style="top: 280%; left: 12%; width: 120px; height: 120px"
         class="bubble"
         id="bubble-15"
+        loading="lazy"
       />
       <img
-        src="./assets/Bubble-4-opacity50.png"
+        src="./assets/Bubble-4-opacity50.webp"
         style="top: 300%; left: 10%; width: 50px; height: 50px"
         class="bubble"
         id="bubble-16"
+        loading="lazy"
       />
     </div>
-    <!-- JavaScript Files -->
-    <script src="./JS/lazyLoading.js"></script>
-    <script src="./JS/bgReveal.js"></script>
-    <script src="./JS/backgroundParallax.js"></script>
-
-    <script src="./JS/navReveal.js"></script>
-    <script src="./JS/textReveal.js"></script>
-
-    <script src="./JS/clickBubble.js"></script>
-    <script src="./jQuery/bubbleReveal.js"></script>
   </body>
 </html>

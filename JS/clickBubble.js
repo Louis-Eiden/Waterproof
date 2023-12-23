@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Set initial position of the new bubble at the click position
     newBubble.style.top =
-      event.clientY + document.documentElement.scrollTop + "px";
-    newBubble.style.left = event.clientX + "px";
+      event.clientY + document.documentElement.scrollTop - 20 + "px";
+    newBubble.style.left = event.clientX - 20 + "px";
 
     // Trigger reflow to ensure the transition is applied
     newBubble.offsetHeight;
