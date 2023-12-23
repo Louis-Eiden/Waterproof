@@ -190,7 +190,8 @@ header {
   height: 220px;
   z-index: 10;
   border-top: 2px solid var(--main-color-1);
-  transition: var(--time-1);
+  opacity: 0;
+  transition: opacity var(--time-2) ease-in-out;
   mix-blend-mode: multiply;
 }
 
@@ -200,8 +201,6 @@ nav.container {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  opacity: 0;
-  transition: opacity var(--time-2) ease-in-out;
 }
 
 .links {
