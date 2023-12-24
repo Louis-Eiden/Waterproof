@@ -26,7 +26,7 @@
 
 html {
   scroll-behavior: smooth;
-  /* scroll-snap-type: y proximity; */
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -64,9 +64,10 @@ ul {
   position: relative;
   width: 100%;
   height: 100%;
-  /* max-width: 75rem; */
   margin: 0 auto;
   padding: 0 1.5rem;
+  will-change: transform;
+  transition: transform var(--time-2);
 }
 
 .section {
@@ -136,15 +137,20 @@ ul {
   opacity: 0;
 }
 
-.btn:hover {
+/* .btn:hover {
   color: #fff;
   mix-blend-mode: initial;
-}
+} */
 
-.nav-btn:hover {
+/* .nav-btn:hover {
   color: #fff;
   mix-blend-mode: initial;
-}
+} */
+
+/* .courses .container:has(.btn:hover),
+.header .container:has(.nav-btn:hover) {
+  mix-blend-mode: initial;
+} */
 
 /* .nav-btn::after {
   content: "";
@@ -187,7 +193,7 @@ ul {
   opacity: 1;
 }
 
-.body:not(.loading) .loader {
+/* .body:not(.loading) .loader {
   display: none;
 }
 
@@ -212,7 +218,7 @@ body.loading .loader {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* --------------- Navbar Styling --------------- */
 
@@ -334,11 +340,14 @@ body.open .hamburger .bar:last-child {
 
 /* --------------- Courses / Locations--------------- */
 
+.courses .container {
+  mix-blend-mode: multiply;
+}
+
 .location,
 .course {
   display: flex;
   align-items: center;
-  /* width: calc(100% - 20rem); */
   margin: 0 10rem 5rem 10rem;
 }
 
@@ -380,7 +389,7 @@ body.open .hamburger .bar:last-child {
 footer {
   position: absolute;
   width: 100%;
-  height: 220px;
+  height: 315px;
   background-color: black;
   /* mix-blend-mode: multiply; */
   z-index: 100;
@@ -409,4 +418,87 @@ footer .container {
   margin: 1rem;
   display: flex;
   align-items: center;
+}
+
+/* --------------- Booking ---------------
+
+.calendar.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body:has(#booking) {
+  overflow-x: hidden;
+  background-color: #028194;
+  background-image: url("./assets/background1920-compressed.webp");
+  background-position: center -100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Inter", sans-serif;
+} */
+
+/* Modals Calendar */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 11;
+  pointer-events: none;
+}
+
+.modal-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transition: var(--time-1);
+}
+
+.booking {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% + 400px));
+  width: 800px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.booking #calendar {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px; */
+}
+
+.courses.open .modal {
+  pointer-events: auto;
+}
+
+.courses.open .modal-overlay {
+  opacity: 1;
+}
+
+.courses.open .container {
+  transform: scale(0.9);
+}
+/* .courses.open .body {
+  background-size: 90%;
+} */
+
+.courses.open .booking {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: 0.45s 0.1s;
 }

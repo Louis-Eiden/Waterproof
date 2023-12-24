@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Waterproof</title>
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
@@ -31,14 +31,16 @@
 
     <script src="./JS/clickBubble.js"></script>
     <script src="./jQuery/bubbleReveal.js"></script>
+
+    <script src="./JS/modalCalendar.js"></script>
   </head>
   <body>
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
     <header>
       <!-- --------- Navbar --------- -->
       <nav class="container">
         <a href="#" class="logo">waterproof</a>
-        <a href="#" class="nav-btn">book now</a>
+        <span class="nav-btn booking-btn">book now</span>
         <div class="links">
           <ul>
             <li>
@@ -67,6 +69,19 @@
 
       <!-- Courses Section -->
       <section class="courses section" id="courses">
+        <div class="modal">
+          <div class="modal-overlay"></div>
+          <div class="booking">
+            <iframe
+              id="calendar"
+              src="https://calendar.google.com/calendar/embed?src=eidenlouis.mt%40gmail.com&ctz=Europe%2FBerlin"
+              style="border: 0"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+          </div>
+        </div>
+
         <div class="container">
           <!-- Children -->
           <div class="course" id="children">
@@ -96,12 +111,12 @@
                 build a foundation for a lifetime of aquatic enjoyment.
               </p>
             </div>
-            <a href="#" class="btn">kinder kursplan</a>
+            <a class="btn booking-btn">kinder kursplan</a>
           </div>
 
           <!-- Adults -->
           <div class="course" id="adult">
-            <a href="#" class="btn">erwachsenen kursplan</a>
+            <a class="btn booking-btn">erwachsenen kursplan</a>
             <div class="info right">
               <!-- German -->
               <p class="heading de">Unsere Erwachsenen-Schwimmkurse</p>
