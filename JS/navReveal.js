@@ -4,5 +4,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(function () {
     nav.style.opacity = 1;
-  }, 2200);
+  }, 1300);
 });
