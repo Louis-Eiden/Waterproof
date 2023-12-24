@@ -31,13 +31,17 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: #028194;
   background-position: center -200px;
+  /* background-position: center top; */
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Inter", sans-serif;
 }
 
-body.loading {
+body.loading .header,
+body.loading .main,
+body.loading .footer {
   opacity: 0; /* Initially set the opacity to 0 while the image is loading */
 }
 
@@ -183,14 +187,18 @@ ul {
   opacity: 1;
 }
 
-/* .loader {
+.body:not(.loading) .loader {
+  display: none;
+}
+
+body.loading .loader {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: inline-block;
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db;
+  border: 4px solid var(--text-color-2);
+  border-top: 4px solid var(--text-color-1);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -204,7 +212,7 @@ ul {
   100% {
     transform: rotate(360deg);
   }
-} */
+}
 
 /* --------------- Navbar Styling --------------- */
 

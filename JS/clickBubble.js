@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var newBubble = document.createElement("img");
     var randomBubbleIndex = Math.floor(Math.random() * 4) + 1;
 
-    newBubble.src = `./assets/Bubble-${randomBubbleIndex}-opacity50.png`;
+    newBubble.src = `./assets/Bubble-${randomBubbleIndex}-opacity50.webp`;
     newBubble.classList.add("bubble", "click-bubble");
     document.body.appendChild(newBubble);
 
