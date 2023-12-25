@@ -21,6 +21,10 @@
       src="https://kit.fontawesome.com/9292224885.js"
       crossorigin="anonymous"
     ></script>
+    <!-- --------- Full Calendar --------- -->
+    <script src="./assets/fullcalendar-6.1.10/dist/index.global.js"></script>
+    <script src="./assets/fullcalendar-6.1.10/packages/google-calendar/index.global.js"></script>
+
     <!-- ---------  JavaScript Files --------- -->
     <script src="./JS/bgLazyLoading.js"></script>
     <script src="./JS/bgReveal.js"></script>
@@ -32,9 +36,13 @@
     <script src="./JS/clickBubble.js"></script>
     <script src="./jQuery/bubbleReveal.js"></script>
 
+    <script src="./JS/menuToggle.js"></script>
+    <script src="./JS/scrollToNextSection.js"></script>
+
     <script src="./JS/modalCalendar.js"></script>
   </head>
   <body>
+    <div class="overlay"></div>
     <!-- <div class="loader"></div> -->
     <header>
       <!-- --------- Navbar --------- -->
@@ -64,7 +72,12 @@
     <main>
       <!-- Home Section -->
       <section class="home section" id="home">
-        <div class="container"></div>
+        <div class="container">
+          <div class="arrow">
+            Explore more
+            <i class="fa-solid fa-angle-down arrow-icon"></i>
+          </div>
+        </div>
       </section>
 
       <!-- Courses Section -->
@@ -72,13 +85,15 @@
         <div class="modal">
           <div class="modal-overlay"></div>
           <div class="booking">
-            <iframe
+            <div id="calendar"></div>
+
+            <!-- <iframe
               id="calendar"
               src="https://calendar.google.com/calendar/embed?src=eidenlouis.mt%40gmail.com&ctz=Europe%2FBerlin"
               style="border: 0"
               frameborder="0"
               scrolling="no"
-            ></iframe>
+            ></iframe> -->
           </div>
         </div>
 
@@ -116,7 +131,7 @@
 
           <!-- Adults -->
           <div class="course" id="adult">
-            <a class="btn booking-btn">erwachsenen kursplan</a>
+            <a class="btn booking-btn adult-1">erwachsenen kursplan</a>
             <div class="info right">
               <!-- German -->
               <p class="heading de">Unsere Erwachsenen-Schwimmkurse</p>
@@ -136,14 +151,14 @@
                 A Path to Increased Fitness, Fun, and Relaxation
               </p>
               <p class="text en">
-                Welcome to [Your Swimming School Name], where we believe that
-                it's never too late to dive into the world of swimming! Our
-                adult swimming courses are designed to cater to individuals of
-                all skill levels, whether you're a beginner looking to conquer
-                your fear of water or an experienced swimmer aiming to refine
-                your technique.
+                Welcome to Waterproof, where we believe that it's never too late
+                to dive into the world of swimming! Our adult swimming courses
+                are designed to cater to individuals of all skill levels,
+                whether you're a beginner looking to conquer your fear of water
+                or an experienced swimmer aiming to refine your technique.
               </p>
             </div>
+            <a class="btn booking-btn adult-2">erwachsenen kursplan</a>
           </div>
         </div>
       </section>
@@ -156,27 +171,23 @@
             <div class="info left">
               <!-- German -->
               <p class="heading de">Freibad Winnweiler</p>
-              <p class="sub-heading de">Spaß, Sicherheit, Selbstvertrauen</p>
+              <p class="sub-heading de">
+                Einer gemütlichen und einladenden Umgebung
+              </p>
               <p class="text de">
-                Unsere speziell konzipierten Kinder-Schwimmkurse bieten nicht
-                nur eine sichere Lernumgebung, sondern auch jede Menge Spaß für
-                die kleinen Wasserratten. Mit einem erfahrenen Team von
-                qualifizierten Schwimmlehrern sorgen wir dafür, dass Ihre Kinder
-                nicht nur schwimmen lernen, sondern auch Vertrauen im Wasser
-                aufbauen.
+                Entdecken Sie die Freude am Schwimmen in einem kleinen, aber
+                charmanten Freibad. Diese Outdoor-Anlage ist der perfekte Ort um
+                zu lernen und bietet eine angenehme umgebung für Schwimmer jeden
+                Alters und Könnens.
               </p>
               <!-- English -->
-              <p class="heading en">Children's Swimming Courses</p>
-              <p class="sub-heading en">
-                Where Every Child Dives into a World of Confidence and Fun!
-              </p>
+              <p class="heading en">Freibad Winnweiler</p>
+              <p class="sub-heading en">A cozy and inviting setting</p>
               <p class="text en">
-                At Waterproof, we believe that swimming is not just a skill;
-                it's a lifelong adventure filled with joy and
-                confidence-building moments. Our children's swimming courses are
-                designed to create a safe and exciting environment where kids
-                can embrace the water, develop essential swimming skills, and
-                build a foundation for a lifetime of aquatic enjoyment.
+                Discover the joy of swimming in Winnweiler a small yet charming
+                water park. This outdoor facility is the perfect haven for
+                learning, ensuring a personalized and comfortable experience for
+                swimmers of all ages and skill levels.
               </p>
             </div>
             <!-- Picture -->
@@ -193,35 +204,36 @@
             <img
               src="./assets/kircheimbolanden.webp"
               alt="Hallenbad Kircheimbolanden"
-              class="img"
+              class="img kib-1"
             />
             <!-- German -->
             <div class="info right">
               <p class="heading de">Hallenbad Kircheimbolanden</p>
               <p class="sub-heading de">
-                Ein Weg zu mehr Fitness, Spaß und Entspannung
+                Einer gemütlichen und einladenden Umgebung
               </p>
               <p class="text de">
-                Bei Waterproof verstehen wir, dass es nie zu spät ist, das
-                Schwimmen zu erlernen oder die eigenen Schwimmfertigkeiten zu
-                verbessern. Unsere Erwachsenen-Schwimmkurse bieten die perfekte
-                Umgebung, um in Ihrem eigenen Tempo zu lernen und sich im Wasser
-                wohl zu fühlen..
+                Entdecken Sie die Freude am Schwimmen in einem kleinen, aber
+                charmanten Freibad. Diese Outdoor-Anlage ist der perfekte Ort um
+                zu lernen und bietet eine angenehme umgebung für Schwimmer jeden
+                Alters und Könnens.
               </p>
               <!-- English -->
-              <p class="heading en">Our Adult Swimming Courses</p>
-              <p class="sub-heading en">
-                A Path to Increased Fitness, Fun, and Relaxation
-              </p>
+              <p class="heading en">Hallenbad Kircheimbolanden</p>
+              <p class="sub-heading en">A cozy and inviting setting</p>
               <p class="text en">
-                Welcome to [Your Swimming School Name], where we believe that
-                it's never too late to dive into the world of swimming! Our
-                adult swimming courses are designed to cater to individuals of
-                all skill levels, whether you're a beginner looking to conquer
-                your fear of water or an experienced swimmer aiming to refine
-                your technique.
+                Discover the joy of swimming in Winnweiler a small yet charming
+                water park. This outdoor facility is the perfect haven for
+                learning, ensuring a personalized and comfortable experience for
+                swimmers of all ages and skill levels.
               </p>
             </div>
+            <!-- Picture -->
+            <img
+              src="./assets/kircheimbolanden.webp"
+              alt="Hallenbad Kircheimbolanden"
+              class="img kib-2"
+            />
           </div>
         </div>
       </section>
@@ -246,7 +258,7 @@
               </a>
             </li>
           </ul>
-          <p class="copy">&copy; 2023. All rights reserved</p>
+          <!-- <p class="copy">&copy; 2023. All rights reserved</p> -->
 
           <!-- <div class="contact-info"></div>
           <div class="opening-hours"></div> -->

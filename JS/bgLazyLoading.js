@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add a loading class to the body to set opacity to 0
   body.classList.add("loading");
   // Set the source of the background image
-  bgImage.src = "./assets/background1920-compressed.webp";
+  bgImage.src = "./assets/background-1920-long-compressed.webp";
 
   // Event listener for when the image has loaded
   bgImage.onload = function () {
