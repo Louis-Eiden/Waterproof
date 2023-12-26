@@ -8,7 +8,6 @@ $(document).ready(function () {
     origin: "bottom",
     distance: "0%",
     easing: "ease-in-out",
-
     // Additional options...
     afterReveal: function (domEl) {
       animateBubbles(domEl);

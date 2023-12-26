@@ -1,4 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
+  let width = window.innerWidth; // initialize width
+
+  // Function to get the bg img depending on the window width
+  function viewPort(width) {
+    if (width < 660) {
+      return "mobile-background.webp";
+    } else if (width < 1150) {
+      return "tablet-background.webp";
+    } else {
+      return "desktop-background.webp";
+    }
+  }
+  let bgFileName = viewPort(width); // Initialize
+
+  // eventlistener for window resize
+  window.addEventListener("resize", function () {
+    width = window.innerWidth;
+    bgFileName = viewPort(width);
+  });
+
   // Create a new Image object
   var bgImage = new Image();
   var body = document.body;
@@ -6,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add a loading class to the body to set opacity to 0
   body.classList.add("loading");
   // Set the source of the background image
-  bgImage.src = "./assets/background-1920-long-compressed.webp";
+  bgImage.src = "./assets/" + bgFileName;
 
   // Event listener for when the image has loaded
   bgImage.onload = function () {

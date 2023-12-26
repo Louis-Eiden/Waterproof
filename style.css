@@ -175,6 +175,10 @@ ul {
   display: none;
 }
 
+/* .bubbles {
+  overflow: hidden;
+} */
+
 .bubble {
   position: absolute;
   opacity: 0;
