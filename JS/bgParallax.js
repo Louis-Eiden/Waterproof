@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", function () {
     width = window.innerWidth;
     multiplier = viewPort(width);
-    console.log(multiplier);
   });
 
   var body = document.body;
